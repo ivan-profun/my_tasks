@@ -47,6 +47,17 @@ A simple SPA.
    cp .env.example .env
    ```
 
+   For local development edit and add some strings in .env
+   ```env
+   SESSION_SECURE_COOKIE=false
+   SANCTUM_STATEFUL_DOMAINS=localhost:5173
+   ```
+
+   If login don't work on windows, make
+   ```env
+   SESSION_LIFETIME=300
+   ```
+
 ### 5. Run migrations
    ```bash
    cd ../docker
