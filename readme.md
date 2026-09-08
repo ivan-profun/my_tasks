@@ -49,6 +49,7 @@ A simple SPA.
 
 ### 5. Run migrations
    ```bash
+   cd ../docker
    docker compose exec app php artisan migrate
    ```
 
@@ -56,18 +57,21 @@ A simple SPA.
 
 #### for a dev server
    ```bash
+   cd ../src
    npm install
    npm run dev
    ```
    
 #### for a prod server
    ```bash
+   cd ../src
    npm install
    npm run build
    ```
 
 ### Making default data
    ```bash
+   cd ../docker
    docker compose exec app php artisan db:seed
    ```
 
