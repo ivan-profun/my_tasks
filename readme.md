@@ -32,7 +32,7 @@ A simple SPA.
 
 ### 2. Configure docker environment
    ```bash
-   cd ../docker
+   cd ./docker
    cp .env_template .env
    ```
 
