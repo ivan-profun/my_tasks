@@ -58,13 +58,21 @@ A simple SPA.
    SESSION_LIFETIME=300
    ```
 
-### 5. Run migrations
+### 5. Install PHP dependencies and generate the app key
+
+   ```bash
+   cd ../docker
+   docker compose exec app composer install
+   docker compose exec app php artisan key:generate
+   ```
+
+### 6. Run migrations
    ```bash
    cd ../docker
    docker compose exec app php artisan migrate
    ```
 
-### 6. Run frontend
+### 7. Run frontend
 
 #### for a dev server
    ```bash
